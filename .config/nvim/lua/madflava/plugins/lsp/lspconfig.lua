@@ -58,15 +58,55 @@ for type, icon in pairs(signs) do
 	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
+vim.cmd([[autocmd! ColorScheme * highlight NormalFloat guibg=#1f2335]])
+vim.cmd([[autocmd! ColorScheme * highlight FloatBorder guifg=white guibg=#1f2335]])
+
+local border = {
+	{ "🭽", "FloatBorder" },
+	{ "▔", "FloatBorder" },
+	{ "🭾", "FloatBorder" },
+	{ "▕", "FloatBorder" },
+	{ "🭿", "FloatBorder" },
+	{ "▁", "FloatBorder" },
+	{ "🭼", "FloatBorder" },
+	{ "▏", "FloatBorder" },
+}
+
+local config = {
+	virtual_text = false, -- disable virtual text
+	signs = {
+		active = signs, -- show signs
+	},
+	update_in_insert = true,
+	underline = true,
+	severity_sort = true,
+	float = {
+		focusable = true,
+		style = "minimal",
+		border = "rounded",
+		source = "always",
+		header = "",
+		prefix = "",
+	},
+}
+
+vim.diagnostic.config(config)
+-- LSP settings (for overriding per client)
+local handlers = {
+	["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = border }),
+	["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = border }),
+}
 -- configure html server
 lspconfig["html"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
+	handlers = handlers,
 })
 
 -- configure typescript server with plugin
 typescript.setup({
 	server = {
+		handlers = handlers,
 		capabilities = capabilities,
 		on_attach = on_attach,
 		filetypes = {
@@ -84,10 +124,12 @@ typescript.setup({
 lspconfig["cssls"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
+	handlers = handlers,
 })
 
 -- configure tailwindcss server
 lspconfig["tailwindcss"].setup({
+	handlers = handlers,
 	capabilities = capabilities,
 	on_attach = on_attach,
 })
@@ -95,6 +137,7 @@ lspconfig["tailwindcss"].setup({
 -- configure emmet language server
 lspconfig["emmet_ls"].setup({
 	capabilities = capabilities,
+	handlers = handlers,
 	on_attach = on_attach,
 	filetypes = { "html", "typescriptreact", "javascriptreact", "css", "sass", "scss", "less", "svelte" },
 })
@@ -103,6 +146,7 @@ lspconfig["emmet_ls"].setup({
 lspconfig["sumneko_lua"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
+	handlers = handlers,
 	settings = { -- custom settings for lua
 		Lua = {
 			-- make the language server recognize "vim" global
