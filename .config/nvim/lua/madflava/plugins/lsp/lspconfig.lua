@@ -18,7 +18,6 @@ end
 
 local keymap = vim.keymap -- for conciseness
 local navic = require("nvim-navic")
-
 -- enable keybinds only for when lsp server available
 local on_attach = function(client, bufnr)
 	-- keybind options
