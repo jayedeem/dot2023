@@ -111,6 +111,13 @@ return packer.startup(function(use)
 	use("github/copilot.vim")
 	--trouble
 	use({ "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" })
+	-- breadcrumbs
+	use({
+		"SmiteshP/nvim-navic",
+		requires = "neovim/nvim-lspconfig",
+	})
+	use({ "RREthy/vim-illuminate" })
+
 	if packer_bootstrap then
 		require("packer").sync()
 	end

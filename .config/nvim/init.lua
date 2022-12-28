@@ -1,4 +1,16 @@
-require("madflava.plugins-setup")
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+	vim.fn.system({
+		"git",
+		"clone",
+		"--filter=blob:none",
+		"--single-branch",
+		"https://github.com/folke/lazy.nvim.git",
+		lazypath,
+	})
+end
+vim.opt.runtimepath:prepend(lazypath)
+require("madflava.lazy")
 require("madflava.core.options")
 require("madflava.core.keymaps")
 require("madflava.core.colorscheme")
@@ -19,3 +31,5 @@ require("madflava.plugins.dashboard")
 require("madflava.plugins.indent")
 require("madflava.plugins.ufo")
 require("madflava.plugins.trouble")
+require("madflava.plugins.breadcrumbs")
+require("madflava.plugins.illuminate")
