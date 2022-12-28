@@ -3,6 +3,7 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap -- for conciseness
 local opts = { noremap = true, silent = true }
+
 ---------------------
 -- General Keymaps
 ---------------------
