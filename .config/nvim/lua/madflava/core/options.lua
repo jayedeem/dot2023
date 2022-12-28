@@ -44,7 +44,7 @@ opt.splitright = true -- split vertical window to the right
 opt.iskeyword:append("-") -- consider string-string as whole word
 
 opt.scrolloff = 8
-opt.updatetime = 50
+opt.updatetime = 250
 opt.backup = false
 opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 opt.undofile = true
