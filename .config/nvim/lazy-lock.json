@@ -38,5 +38,6 @@
   "vim-illuminate": { "branch": "master", "commit": "a6d0b28ea7d6b9d139374be1f94a16bd120fcda3" },
   "vim-maximizer": { "branch": "master", "commit": "2e54952fe91e140a2e69f35f22131219fcd9c5f1" },
   "vim-nightfly-guicolors": { "branch": "master", "commit": "3ca232533b2bd58cc486552e9f4a9da7f7458bdd" },
-  "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" }
+  "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" },
+  "winbar.nvim": { "branch": "main", "commit": "13739fdb31be51a1000486189662596f07a59a31" }
 }

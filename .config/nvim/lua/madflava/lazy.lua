@@ -16,7 +16,7 @@ lazy.setup({
 	"nvim-tree/nvim-web-devicons",
 	"nvim-lualine/lualine.nvim",
 	{ "nvim-telescope/telescope.nvim" },
-	{ "nvim-telescope/telescope-fzf-native.nvim", cmd = "Make" },
+	{ "nvim-telescope/telescope-fzf-native.nvim", build = "Make" },
 	"hrsh7th/nvim-cmp",
 	"hrsh7th/cmp-buffer",
 	"hrsh7th/cmp-path",
@@ -50,4 +50,5 @@ lazy.setup({
 	{ "RREthy/vim-illuminate" },
 	{ "kevinhwang91/promise-async" },
 	{ "kevinhwang91/nvim-ufo" },
+	{ "fgheng/winbar.nvim" },
 })
