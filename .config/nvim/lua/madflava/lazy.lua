@@ -16,8 +16,8 @@ lazy.setup({
 	"nvim-tree/nvim-tree.lua",
 	"nvim-tree/nvim-web-devicons",
 	"nvim-lualine/lualine.nvim",
-	{ "nvim-telescope/telescope.nvim" },
-	{ "nvim-telescope/telescope-fzf-native.nvim", build = "Make" },
+	{ "nvim-telescope/telescope.nvim", version = "0.1.0" },
+	{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 	"hrsh7th/nvim-cmp",
 	"hrsh7th/cmp-buffer",
 	"hrsh7th/cmp-path",
@@ -35,6 +35,7 @@ lazy.setup({
 	"jayp0521/mason-null-ls.nvim",
 	{
 		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate",
 	},
 	"windwp/nvim-autopairs",
 
