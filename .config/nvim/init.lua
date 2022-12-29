@@ -1,16 +1,15 @@
--- local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
--- if not vim.loop.fs_stat(lazypath) then
--- 	vim.fn.system({
--- 		"git",
--- 		"clone",
--- 		"--filter=blob:none",
--- 		"--single-branch",
--- 		"https://github.com/folke/lazy.nvim.git",
--- 		lazypath,
--- 	})
--- end
--- vim.opt.runtimepath:prepend(lazypath)
-require("madflava.core.initLazy")
+ local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+ if not vim.loop.fs_stat(lazypath) then
+ 	vim.fn.system({
+ 		"git",
+ 		"clone",
+ 		"--filter=blob:none",
+ 		"--single-branch",
+ 		"https://github.com/folke/lazy.nvim.git",
+ 		lazypath,
+ 	})
+ end
+ vim.opt.runtimepath:prepend(lazypath)
 require("madflava.lazy")
 require("madflava.core.options")
 require("madflava.core.keymaps")
