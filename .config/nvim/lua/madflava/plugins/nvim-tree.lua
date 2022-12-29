@@ -35,9 +35,9 @@ nvimtree.setup({
 			},
 		},
 	},
-	-- 	git = {
-	-- 		ignore = false,
-	-- 	},
+	git = {
+		ignore = false,
+	},
 })
 local nvim_tree_events = require("nvim-tree.events")
 local bufferline_api = require("bufferline.api")
