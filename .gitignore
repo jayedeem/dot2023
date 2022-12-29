@@ -1,4 +1,5 @@
-~/
-!~/.tmux.conf
+*/**
+.*
+!.tmux.conf
 
-!~/.config/nvim/**
+!.config/nvim/**
