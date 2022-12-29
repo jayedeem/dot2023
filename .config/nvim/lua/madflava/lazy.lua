@@ -3,6 +3,7 @@ local lazy_status, lazy = pcall(require, "lazy")
 if not lazy_status then
 	return
 end
+
 vim.g.mapleader = " "
 
 lazy.setup({

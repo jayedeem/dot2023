@@ -1,4 +1,23 @@
-~/
-!~/.tmux.conf
+*/*
+.CFUserTextEncoding
+.DS_Store
+.bashrc
+.gitconfig
+.node_repl_history
+.oh-my-zsh/
+.p10k.zsh
+.profile
+.python_history
+.viminfo
+.yarnrc
+".zcompdump-Andrew\342\200\231s MacBook Pro-5.8"
+".zcompdump-Andrew\342\200\231s MacBook Pro-5.8.1"
+".zcompdump-Andrew\342\200\231s MacBook Pro-5.9"
+.zprofile
+.zsh_history
+.zshenv
+.zshrc
+.vscode/
+.build/*
+!.config/nvim/*
 
-!~/.config/nvim/**
