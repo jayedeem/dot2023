@@ -50,9 +50,10 @@ keymap.set("n", "<leader>s", ":w<CR>", opts)
 -- vim-maximizer
 keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>", opts) -- toggle split window maximization
 
--- nvim-tree
+-- nvim-tree,
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", opts) -- toggle file explorer
-
+-- undotree
+keymap.set("n", "<leader>u", ":UndotreeToggle<CR>", opts)
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", opts) -- find files within current working directory, respects .gitignore
 keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", opts) -- find string in current working directory as you type

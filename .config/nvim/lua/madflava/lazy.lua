@@ -39,7 +39,7 @@ lazy.setup({
 
 	{ "windwp/nvim-ts-autotag" },
 	"lewis6991/gitsigns.nvim",
-	"glepnir/dashboard-nvim",
+	-- "glepnir/dashboard-nvim",
 	{ "romgrk/barbar.nvim" },
 	"lukas-reineke/indent-blankline.nvim",
 	"github/copilot.vim",
@@ -51,4 +51,6 @@ lazy.setup({
 	{ "kevinhwang91/promise-async" },
 	{ "kevinhwang91/nvim-ufo" },
 	{ "fgheng/winbar.nvim" },
+	{ "ThePrimeagen/harpoon" },
+	{ "mbbill/undotree" },
 })
