@@ -12,30 +12,29 @@ end
 
 vim.opt.runtimepath:prepend(lazypath)
 
-require("madflava.lazy")
-require("madflava.core.options")
-require("madflava.core.keymaps")
-require("madflava.core.colorscheme")
-require("madflava.plugins.comment")
-require("madflava.plugins.nvim-tree")
-require("madflava.plugins.lualine")
-require("madflava.plugins.telescope")
-require("madflava.plugins.nvim-cmp")
-require("madflava.plugins.lsp.mason")
-require("madflava.plugins.lsp.lspsaga")
-require("madflava.plugins.lsp.lspconfig")
-require("madflava.plugins.lsp.null-ls")
-require("madflava.plugins.autopairs")
-require("madflava.plugins.treesitter")
-require("madflava.plugins.gitsigns")
-require("madflava.plugins.toggle-term")
--- require("madflava.plugins.dashboard")
-require("madflava.plugins.indent")
-require("madflava.plugins.ufo")
-require("madflava.plugins.trouble")
-require("madflava.plugins.winbar")
-require("madflava.plugins.breadcrumbs")
-require("madflava.plugins.illuminate")
-require("madflava.plugins.harpoon")
-require("madflava.plugins.fugitive")
-require("madflava.plugins.tabout")
+require("madflava.lazy") -- lazy loading
+require("madflava.core.options") -- options
+require("madflava.core.keymaps") -- keymaps
+require("madflava.core.colorscheme") -- colorscheme
+require("madflava.plugins.comment") -- comment
+require("madflava.plugins.nvim-tree") -- nvim-tree
+require("madflava.plugins.lualine") -- lualine
+require("madflava.plugins.telescope") --  telescope
+require("madflava.plugins.nvim-cmp") -- nvim-cmp
+require("madflava.plugins.lsp.mason") -- mason
+require("madflava.plugins.lsp.lspsaga") -- lspsaga
+require("madflava.plugins.lsp.lspconfig") -- lspconfig
+require("madflava.plugins.lsp.null-ls") -- null-ls
+require("madflava.plugins.autopairs") -- autopairs
+require("madflava.plugins.treesitter") -- treesitter
+require("madflava.plugins.gitsigns") -- git signs
+-- require("madflava.plugins.toggle-term") -- toggle-term
+require("madflava.plugins.indent") -- blank indent
+require("madflava.plugins.ufo") -- ufo
+require("madflava.plugins.trouble") --trouble
+require("madflava.plugins.winbar") -- winbar
+require("madflava.plugins.breadcrumbs") -- navic
+require("madflava.plugins.illuminate") -- illuminate
+require("madflava.plugins.harpoon") -- harpoon
+require("madflava.plugins.fugitive") -- vim fugitive
+require("madflava.plugins.tabout") -- tabout
