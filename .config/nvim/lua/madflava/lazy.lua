@@ -55,4 +55,5 @@ lazy.setup({
 	{ "ThePrimeagen/harpoon" },
 	{ "mbbill/undotree" },
 	{ "tpope/vim-fugitive" },
+	{ "abecodes/tabout.nvim" },
 })
