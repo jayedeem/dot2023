@@ -10,6 +10,7 @@ if not vim.loop.fs_stat(lazypath) then
 	})
 end
 vim.opt.runtimepath:prepend(lazypath)
+
 require("madflava.lazy")
 require("madflava.core.options")
 require("madflava.core.keymaps")
@@ -35,3 +36,4 @@ require("madflava.plugins.winbar")
 require("madflava.plugins.breadcrumbs")
 require("madflava.plugins.illuminate")
 require("madflava.plugins.harpoon")
+require("madflava.plugins.fugitive")

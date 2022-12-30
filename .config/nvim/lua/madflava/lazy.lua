@@ -3,6 +3,7 @@ local lazy_status, lazy = pcall(require, "lazy")
 if not lazy_status then
 	return
 end
+
 vim.g.mapleader = " "
 
 lazy.setup({
@@ -53,4 +54,5 @@ lazy.setup({
 	{ "fgheng/winbar.nvim" },
 	{ "ThePrimeagen/harpoon" },
 	{ "mbbill/undotree" },
+	{ "tpope/vim-fugitive" },
 })

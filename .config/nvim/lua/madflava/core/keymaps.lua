@@ -7,8 +7,6 @@ local opts = { noremap = true, silent = true }
 ---------------------
 -- General Keymaps
 ---------------------
-keymap.set("n", "zR", require("ufo").openAllFolds)
-keymap.set("n", "zM", require("ufo").closeAllFolds)
 -- move line up or down
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
