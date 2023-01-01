@@ -56,4 +56,5 @@ lazy.setup({
 	{ "mbbill/undotree" },
 	{ "tpope/vim-fugitive" },
 	{ "abecodes/tabout.nvim" },
+	{ "folke/which-key.nvim" },
 })

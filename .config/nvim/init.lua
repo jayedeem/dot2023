@@ -38,3 +38,4 @@ require("madflava.plugins.illuminate") -- illuminate
 require("madflava.plugins.harpoon") -- harpoon
 require("madflava.plugins.fugitive") -- vim fugitive
 require("madflava.plugins.tabout") -- tabout
+require("madflava.plugins.whichkey")
