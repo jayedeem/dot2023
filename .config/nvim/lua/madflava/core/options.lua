@@ -54,3 +54,7 @@ opt.foldcolumn = "1"
 opt.foldlevel = 99
 opt.foldlevelstart = 99
 opt.foldenable = true
+opt.textwidth = 0
+opt.wrapmargin = 0
+opt.wrap = true
+opt.linebreak = true
