@@ -34,9 +34,9 @@ keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
 keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
 
-keymap.set("n", "<leader>tp", ":BufferPrevious<CR>", opts)
-keymap.set("n", "<leader>tn", ":BufferNext<CR>", opts)
-keymap.set("n", "<leader>tx", ":BufferClose<CR>", opts) -- close current tab
+keymap.set("n", "<S-l>", ":BufferPrevious<CR>", opts)
+keymap.set("n", "<S-h>", ":BufferNext<CR>", opts)
+keymap.set("n", "<S-x>", ":BufferClose<CR>", opts) -- close current tab
 -- keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 -- keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 -- keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
@@ -63,7 +63,6 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", opts) -- list avai
 keymap.set("n", "<leader>gc", "<cmd>Telescope git_commits<cr>") -- list all git commits (use <cr> to checkout) ["gc" for git commits]
 keymap.set("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list git commits for current file/buffer (use <cr> to checkout) ["gfc" for git file commits]
 keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
-keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list cur sent changes per file with diff preview ["gs" for git status]
 
 -- restart lsp server (not on youtube nvim video)
 keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
