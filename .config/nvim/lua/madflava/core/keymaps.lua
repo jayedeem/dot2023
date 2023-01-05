@@ -16,8 +16,11 @@ keymap.set("i", "kj", "<ESC>")
 
 keymap.set("n", "<leader>.", ":BufferPrevious<CR>", opts)
 keymap.set("n", "<leader>,", ":BufferNext<CR>", opts)
+--center cursors
 keymap.set("n", "<C-d>", "<C-d>zz")
 keymap.set("n", "<C-u>", "<C-u>zz")
+keymap.set("n", "n", "nzzzv")
+keymap.set("n", "N", "Nzzzv")
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
@@ -37,9 +40,8 @@ keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
 keymap.set("n", "<S-l>", ":BufferPrevious<CR>", opts)
 keymap.set("n", "<S-h>", ":BufferNext<CR>", opts)
 keymap.set("n", "<S-x>", ":BufferClose<CR>", opts) -- close current tab
--- keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
--- keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
--- keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
+
+keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list cur sent changes per file with diff preview ["gs" for git status]
 keymap.set("n", "<leader>s", ":w<CR>", opts)
 ----------------------
 -- Plugin Keybinds
@@ -72,3 +74,6 @@ vim.keymap.set("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>",
 vim.keymap.set("n", "<leader>xl", "<cmd>TroubleToggle loclist<cr>", { silent = true, noremap = true })
 vim.keymap.set("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>", { silent = true, noremap = true })
 vim.keymap.set("n", "gR", "<cmd>TroubleToggle lsp_references<cr>", { silent = true, noremap = true })
+keymap.set("n", "Q", "<nop>")
+keymap.set("n", "q", "<nop>")
+keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
