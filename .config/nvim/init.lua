@@ -4,8 +4,8 @@ if not vim.loop.fs_stat(lazypath) then
 		"git",
 		"clone",
 		"--filter=blob:none",
-		"--single-branch",
 		"https://github.com/folke/lazy.nvim.git",
+		"--branch=stable",
 		lazypath,
 	})
 end
@@ -39,3 +39,5 @@ require("madflava.plugins.harpoon") -- harpoon
 require("madflava.plugins.fugitive") -- vim fugitive
 require("madflava.plugins.tabout") -- tabout
 require("madflava.plugins.whichkey")
+require("madflava.plugins.colorizer")
+require("madflava.plugins.colortils")

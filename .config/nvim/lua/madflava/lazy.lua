@@ -57,4 +57,6 @@ lazy.setup({
 	{ "tpope/vim-fugitive" },
 	{ "abecodes/tabout.nvim" },
 	{ "folke/which-key.nvim" },
+	{ "nvim-colortils/colortils.nvim" },
+	{ "NvChad/nvim-colorizer.lua" },
 })
