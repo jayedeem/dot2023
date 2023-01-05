@@ -28,7 +28,6 @@ require("madflava.plugins.lsp.null-ls") -- null-ls
 require("madflava.plugins.autopairs") -- autopairs
 require("madflava.plugins.treesitter") -- treesitter
 require("madflava.plugins.gitsigns") -- git signs
--- require("madflava.plugins.toggle-term") -- toggle-term
 require("madflava.plugins.indent") -- blank indent
 require("madflava.plugins.ufo") -- ufo
 require("madflava.plugins.trouble") --trouble
