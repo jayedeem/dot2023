@@ -5,12 +5,11 @@ if not vim.loop.fs_stat(lazypath) then
 		"clone",
 		"--filter=blob:none",
 		"https://github.com/folke/lazy.nvim.git",
-		"--branch=stable",
+		"--branch=stable", -- latest stable release
 		lazypath,
 	})
 end
-
-vim.opt.runtimepath:prepend(lazypath)
+vim.opt.rtp:prepend(lazypath)
 
 require("madflava.lazy") -- lazy loading
 require("madflava.core.options") -- options
@@ -28,6 +27,7 @@ require("madflava.plugins.lsp.null-ls") -- null-ls
 require("madflava.plugins.autopairs") -- autopairs
 require("madflava.plugins.treesitter") -- treesitter
 require("madflava.plugins.gitsigns") -- git signs
+-- require("madflava.plugins.toggle-term") -- toggle-term
 require("madflava.plugins.indent") -- blank indent
 require("madflava.plugins.ufo") -- ufo
 require("madflava.plugins.trouble") --trouble

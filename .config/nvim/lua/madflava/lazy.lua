@@ -16,7 +16,7 @@ lazy.setup({
 	"nvim-tree/nvim-tree.lua",
 	"nvim-tree/nvim-web-devicons",
 	"nvim-lualine/lualine.nvim",
-	{ "nvim-telescope/telescope.nvim" },
+	{ "nvim-telescope/telescope.nvim", version = "0.1.0", dependencies = "nvim-lua/plenary.nvim" },
 	{ "nvim-telescope/telescope-fzf-native.nvim", build = "Make" },
 	"hrsh7th/nvim-cmp",
 	"hrsh7th/cmp-buffer",
@@ -59,4 +59,5 @@ lazy.setup({
 	{ "folke/which-key.nvim" },
 	{ "nvim-colortils/colortils.nvim" },
 	{ "NvChad/nvim-colorizer.lua" },
+	{ "joechrisellis/lsp-format-modifications.nvim" },
 })

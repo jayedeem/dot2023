@@ -37,8 +37,8 @@ keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=") -- make split windows equal width & height
 keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
 
-keymap.set("n", "<S-l>", ":BufferPrevious<CR>", opts)
-keymap.set("n", "<S-h>", ":BufferNext<CR>", opts)
+keymap.set("n", "<S-h>", ":BufferPrevious<CR>", opts)
+keymap.set("n", "<S-l>", ":BufferNext<CR>", opts)
 keymap.set("n", "<S-x>", ":BufferClose<CR>", opts) -- close current tab
 
 keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list cur sent changes per file with diff preview ["gs" for git status]
@@ -77,3 +77,4 @@ vim.keymap.set("n", "gR", "<cmd>TroubleToggle lsp_references<cr>", { silent = tr
 keymap.set("n", "Q", "<nop>")
 keymap.set("n", "q", "<nop>")
 keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+keymap.set("v", "<leader>fs", vim.lsp.buf.format, opts)
